@@ -1,0 +1,109 @@
+//Adam Miszkiewicz 200547405 COMP1030
+//Feb 26, 2023
+//Final Project Idea
+
+
+//game Name
+Melee, Magic, Ranged
+
+//counters
+magic > melee
+ranged > magic
+melee > ranged
+
+//game idea/explanation
+player has 100hp to start. Max hp can only be 100
+pc has 100hp to start. Max hp can only be 100
+pc will have the same choices as player but randomized 
+player choices: attack - choose your way of attacking: melee, magic, ranged
+		block- block incoming attack by 50%
+		heal- heal 30hp, cooldown 1 turn.
+
+attacks do 10dmg which takes -10hp from player
+if magic attack is used against melee attack, dmg will be doubled. magic- 20dmg, melee- 10dmg
+if ranged attack is used against magic attack, dmg will be doubled. ranged- 20dmg, magic- 10dmg
+if melee attack is used against ranged dmg attack, dmg will be doubled. melee- 20dmg, ranged- 10dmg
+
+blocks negate 5dmg so -5hp will be taken if attack is used against it
+if both pc and player use block nothing happens and goes to next turn
+
+player can choose to use heal but it has a 1 turn cooldown so it cannot be spammed
+if healing and attacked no dmg will be taken from attack
+pc can heal but it will be random
+
+//intro to the game and explanation to user
+Welcome to Melee, Magic, Ranged! Fight your way to victory using
+various attacks, blocks and healing potions. In this game you are
+fighting the pc in an intense 1v1 battle, you are provided with these 
+options: Attack, Block, Heal. 
+
+Attack: Melee, Ranged, Magic. Attacks do 10dmg unless countered. 2x dmg if counter is choosen.
+Counters: Magic > Melee, Ranged > Magic, Melee > Ranged.
+Block: Blocks 50% incoming damage.
+Heal: Heals 30hp but has 1 turn cooldown. Healing during attack negates all dmg.
+
+//example of what will be printed if during each situation
+//both use attack
+Turn 1:
+Player Options: Attack, Block, Heal. Choose 'A','B','H'.
+Attack: Melee, Magic, Ranged. Choose '1','2','3'.
+
+Player attacking using Melee!
+PC attacking using Magic!
+
+Player HP: 80hp
+PC HP: 90hp
+
+//one uses attack one uses block
+Turn 2:
+Player Options: Attack, Block, Heal. Choose 'A','B','H'.
+Blocking incoming attacks!
+
+Player using Block!
+PC attacking using Melee!
+
+Player HP: 75hp
+PC HP: 90hp
+
+//both use block
+Turn 3:
+Player Options: Attack, Block, Heal. Choose 'A','B','H'.
+Blocking incoming attacks!
+
+Player using Block!
+PC using Block!
+
+Player HP: 75hp
+PC HP: 90hp
+
+//one uses healing one uses attack
+Turn 4:
+Player Options: Attack, Block, Heal. Choose 'A','B','H'.
+Drinking a delicious healing potion!
+
+Player using Heal!
+PC attacking using Ranged!
+
+Player HP: 100hp
+PC HP: 90hp
+
+//both use same attack
+Turn 5:
+Player Options: Attack, Block, Heal. Choose 'A','B','H'.
+Blocking incoming attacks!
+
+Player PC attacking using Melee!
+PC attacking using Melee!
+
+Player HP: 90hp
+PC HP: 80hp
+
+//if player beats pc
+Turn 6:
+Victory!
+Would you like to play again? 'Y'- Yes, 'N'- No.
+
+//if pc beats player
+Turn 7:
+Defeat!
+Would you like to play again? 'Y'- Yes, 'N'- No.
