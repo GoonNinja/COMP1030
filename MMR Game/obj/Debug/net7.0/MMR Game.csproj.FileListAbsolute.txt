@@ -1,0 +1,15 @@
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\bin\Debug\net7.0\MMR Game.exe
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\bin\Debug\net7.0\MMR Game.deps.json
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\bin\Debug\net7.0\MMR Game.runtimeconfig.json
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\bin\Debug\net7.0\MMR Game.dll
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\bin\Debug\net7.0\MMR Game.pdb
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.csproj.AssemblyReference.cache
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.AssemblyInfoInputs.cache
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.AssemblyInfo.cs
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.csproj.CoreCompileInputs.cache
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.dll
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\refint\MMR Game.dll
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.pdb
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\MMR Game.genruntimeconfig.cache
+C:\Users\adams\Desktop\SCHOOL\COMP1030\MMR Game\obj\Debug\net7.0\ref\MMR Game.dll
