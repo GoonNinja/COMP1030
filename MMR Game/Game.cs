@@ -47,23 +47,63 @@ namespace MMR_Game
         // Start the game loop
         public void Start()
         {
-            // Continue the game loop as long as both players have health
-            while (playerHp > 0 && pcHp > 0)
+            bool playAgain = true;
+
+            while (playAgain)
             {
-                // Display current health status, level, and experience points
-                // and get player and pc choices
-                DisplayStatus();
-                string playerChoice = GetPlayerChoice();
-                string pcChoice = GetPcChoice();
-                Console.WriteLine($"PC chose {pcChoice}");
-                Console.WriteLine();
+                // Reset game state
+                playerHp = 100;
+                pcHp = 100;
+                playerHealCooldown = 0;
+                pcHealCooldown = 0;
+                playerLevel = 1;
+                pcLevel = 1;
+                playerExp = 0;
+                pcExp = 0;
 
-                // Process the choices for the current turn
-                ProcessTurn(playerChoice, pcChoice);
+                // Continue the game loop as long as both players have health
+                while (playerHp > 0 && pcHp > 0)
+                {
+                    // Display current health status, level, and experience points
+                    // and get player and pc choices
+                    DisplayStatus();
+                    string playerChoice = GetPlayerChoice();
+                    string pcChoice = GetPcChoice();
+                    Console.WriteLine($"PC chose {pcChoice}");
+                    Console.WriteLine();
+
+                    // Process the choices for the current turn
+                    ProcessTurn(playerChoice, pcChoice);
+                }
+
+                // Display the end of the game message
+                DisplayEndMessage();
+
+                // Ask the player if they want to play again
+                playAgain = GetPlayAgain();
             }
+        }
 
-            // Display the end of the game message
-            DisplayEndMessage();
+        // Ask user if they want to play again
+        private bool GetPlayAgain()
+        {
+            string playAgainResponse;
+            do
+            {
+                Console.WriteLine("Do you want to play again? (yes/no)");
+                playAgainResponse = (Console.ReadLine() ?? string.Empty).ToLower().Trim();
+
+                if (playAgainResponse == "yes" || playAgainResponse == "no")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please enter 'yes' or 'no'.");
+                }
+            } while (true);
+
+            return playAgainResponse == "yes";
         }
 
         // Display the current health status of the player and pc, level, and experience points
